@@ -62,3 +62,44 @@
 ### do 表达式
 
 > **本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值。**
+
+
+
+## const命令
+
+### const声明一个只读的常量。一旦声明，常量的值就不能改变。
+
+![图片](https://github.com/qq2575896094/ES6/blob/master/images/WX20171027-173059@2x.png)
+
+### const一旦声明变量，就必须立即初始化，不能留到以后赋值。
+
+![图片](https://github.com/qq2575896094/ES6/blob/master/images/WX20171027-173649@2x.png)
+
+### const的作用域与let命令相同：只在声明所在的块级作用域内有效。
+
+![图片](https://github.com/qq2575896094/ES6/blob/master/images/WX20171027-174836@2x.png)
+
+
+### const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。
+
+![图片](https://github.com/qq2575896094/ES6/blob/master/images/WX20171027-175247@2x.png)
+
+
+### const声明的常量，也与let一样不可重复声明。
+
+![图片](https://github.com/qq2575896094/ES6/blob/master/images/WX20171027-175456@2x.png)
+
+
+
+### const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。
+
+
+
+### 顶层对象的属性
+
+### 顶层对象,在浏览器环境指的是window对象.在 Node 指的是global对象。
+
+### var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性。也就是说，从 ES6 开始，全局变量将逐步与顶层对象的属性脱钩。
+
+![图片](https://github.com/qq2575896094/ES6/blob/master/images/WX20171030-092608@2x.png)
+

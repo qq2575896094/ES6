@@ -8,13 +8,13 @@
       从数组和对象中提取值,对变量进行赋值,这被称为解构.
       ````
 
-      [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-095619@2x.png)
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-095619@2x.png)
 
       ````
       如果解构不成功变量的值就等于undefined.
       ````
 
-      [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-095908@2x.png)
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-095908@2x.png)
 
       ````
       如果等号的右边不是数组(或者严格地说,不可以遍历俺的解构),那么将会报错.
@@ -30,7 +30,7 @@
       如果默认值是一个表达式,那么这个表达式是惰性求值的,即只有在使用的时候,才会求值.
       ````
 
-      [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-103434@2x.png)
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-103434@2x.png)
 
       ``fff能取到值,所以没有走fn()函数,而fn没有取到值,才取默认值走了fn()函数``
 
@@ -43,7 +43,7 @@
    对象的解构和数组有一个重要的不同.数组的元素是按次序排列的,变量的取值由他的位置决定;而对象的属性没有次序,变量必须与属性同名,才能取到正确的值.
    ````
 
-   [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-111127@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-111127@2x.png)
 
    ​
 
@@ -51,7 +51,7 @@
    如果变量名与属性名不一致,必须写成下面这样:
    ````
 
-   [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-111226@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-111226@2x.png)
 
    `first是匹配的模式,f才是变量.真正被赋值的变量是f,而不是first.`
 
@@ -61,7 +61,7 @@
    默认值
    ````
 
-   [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-112808@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-112808@2x.png)
 
    ​
 
@@ -71,7 +71,7 @@
    字符串也可以解构赋值.这是因为此时,字符串被转换成一个类似数组的对象.
    ````
 
-   [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-135240@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-135240@2x.png)
 
    ​
 
@@ -82,7 +82,7 @@
    解构赋值的规则是,之后要等号右边的值不是对象或数组,就先将其转为对象.由于undefined和null无法转为对象,所以他们进行解构赋值,都会报错.
    ````
 
-   [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-141208@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-141208@2x.png)
 
    ​
 
@@ -95,7 +95,7 @@
    函数的解构可也以使用默认值.
    ````
 
-   [图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-142816@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/变量的解构赋值/WX20171030-142816@2x.png)
 
    ​
 

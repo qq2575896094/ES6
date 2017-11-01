@@ -10,4 +10,8 @@
 
 3. [字符串的扩展](https://github.com/qq2575896094/ES6/blob/master/code/字符串的扩展/README.md)
 
-4. 正则的扩展
+4. [正则的扩展](https://github.com/qq2575896094/ES6/blob/master/code/正则的扩展/README.md)
+
+5. [数值的扩展](https://github.com/qq2575896094/ES6/blob/master/code/数值的扩展/README.md)
+
+6. [函数的扩展](https://github.com/qq2575896094/ES6/blob/master/code/函数的扩展/README.md)

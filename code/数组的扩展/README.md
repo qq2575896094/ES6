@@ -8,7 +8,7 @@
       扩展运算符是三个点(...).它好比rest参数的逆运算,将数组转为用逗号分隔的参数序列.
       ```
 
-      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-093214@2x.png)
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-093214@2x.png)
 
    2. 替代数组的 apply 方法
 
@@ -16,7 +16,7 @@
       由于扩展运算符可以展开数组,所以不需要apply方法,将数组转为函数的参数.
       ```
 
-      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-100321@2x.png)
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-100321@2x.png)
 
    3. 扩展运算符的应用
 
@@ -37,7 +37,7 @@
    Array.from方法用于将两类对象转为真正的数组:类似数组的对象和可遍历的对象.
    ```
 
-   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-102735@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-102735@2x.png)
 
    ​
 
@@ -69,7 +69,7 @@
    findIndex方法	: 与find方法非常类似,返回一个符合条件的数组成员位置,如果所有成员都不符合条件,则返回-1.
    ```
 
-   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-110150@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-110150@2x.png)
 
    ​
 
@@ -80,7 +80,7 @@
    fill 还可以接收第二个和第三个参数,用于指定填充的起始位置和结束位置.
    ```
 
-   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-110604@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-110604@2x.png)
 
    ​
 
@@ -93,7 +93,7 @@
    values()是对value的遍历.
    ```
 
-   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-112215@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-112215@2x.png)
 
 8. 数组实例的 includes()
 
@@ -102,7 +102,7 @@
    该方法的第二个参数表示搜索的起始位置,默认是0.如果第二个参数为负数,则表示倒数的位置,如果这时它大于数组的长度,则会重置为从0开始.
    ```
 
-   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/函数的扩展/WX20171102-112955@2x.png)
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/数组的扩展/WX20171102-112955@2x.png)
 
    ​
 

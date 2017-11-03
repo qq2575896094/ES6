@@ -17,3 +17,5 @@
 6. [函数的扩展](https://github.com/qq2575896094/ES6/blob/master/code/函数的扩展/README.md)
 
 7. [数组的扩展](https://github.com/qq2575896094/ES6/blob/master/code/数组的扩展/README.md)
+
+8. [对象的扩展](https://github.com/qq2575896094/ES6/blob/master/code/对象的扩展/README.md)

@@ -8,6 +8,8 @@ for (let [index, value] of arr.entries()) {
     console.log([index, value]);     //[ 0, 5 ]  [ 1, 6 ]    [ 2, 7 ]    [ 3, 8 ] ......
 }
 
+console.log(arr.keys());        //{}
+
 for (let a of arr.keys()) { //0 1   2   3   4
     console.log(a);
 }

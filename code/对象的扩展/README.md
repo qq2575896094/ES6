@@ -64,20 +64,118 @@
 
 6. 属性的可枚举性和遍历
 
-   ```
+   1. 可枚举性
 
+      ```
+      对象的每个属性都有一个描述对象,用来控制该属性的行为.Object.getOwnPropertyDescriptor方法可以获取该属性的描述对象.
+      会忽略enumerable为false的四个操作:
+      	1. for...in...
+      	2. Object.keys()
+      	3. JSON.stringify()
+      	4. Object.assign()
+      ```
+
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/对象的扩展/WX20171106-095224@2x.png)
+
+   2. 属性的遍历
+
+      ```
+      ES6一共有5种方法可以遍历对象的属性.
+      1. for...in
+      	遍历对象自身的和继承的可枚举属性(不含Symbol属性).
+      2. Object.keys()
+      	返回一个数组,包括对象自身的(不含继承的)所有可枚举属性(不含Symbol属性)的键名.
+      3. Object.getOwnPropertyNames(obj)
+      	返回一个数组,包含对象自身的所有属性(不含Symbol属性,但是包含不可枚举属性)的键名.
+      4. Object.getOwnPropertySymbols(obj)
+      	返回一个数组,包含对象自身的所有Symbol属相的键名.
+      5. Reflect.ownKeys(obj)
+      	返回一个数组,包含对象自身的所有键名,不管键名是Symbol或是字符串,也不管是否可枚举.
+      ```
+
+      ​
+
+7. Object.getOwnPropertyDescriptors()
+
+   ```
+   目前,不支持该方法!
    ```
 
    ​
 
-7. Object.getOwnPropertyDescriptors()
-
 8. proto属性,Object.setPrototypeOf(),Object.getPrototypeOf()
+
+   1. proto属性
+
+      ```
+      proto属性(前后各两个下划线),用来读取或设置当前对象的prototype对象.__proto__前后的双下划线,说明他本质上是一个内部属性,而不是一个正式的对外的API,只是由于浏览器广泛支持,才被加入了ES6.标准明确规定,只有浏览器必须部署这个属性,其他运行环境不一定需要部署,而且新的代码最好认为这个属性是不存在的.因此,无论从语义角度,还是从兼容性的角度,都不要使用这个属性,而使用:
+      	Object.setPrototypeOf()	:	写操作
+      	Object.getPrototypeOf()	:	读操作
+      	Object.create			:	生成操作
+      实际上,__proto__调用的是Object.prototype.__proto__.
+      ```
+
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/对象的扩展/WX20171106-101717@2x.png)
+
+   2. Object.setPrototypeOf()
+
+      ```
+      该方法的作用与__proto__相同,用来设置一个对象的prototype对象,返回参数对象本身.
+      ```
+
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/对象的扩展/WX20171106-103741@2x.png)
+
+   3. Object.getPrototypeOf()
+
+      ```
+      该方法与Object.setPrototypeOf()方法配套.用于读取一个对象的原型对象.
+      ```
+
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/对象的扩展/WX20171106-104532@2x.png)
+
+      ​
 
 9. super关键字
 
+   ```
+   this关键字总是指向函数所在的当前对象,ES6又新增了另一个类似的关键字super,指向当前对象的原型对象.
+   注意 : super关键字表示原型对象时,只能用在对象的方法中,用在其他地方都会报错.
+   ```
+
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/对象的扩展/WX20171106-141052@2x.png)
+
 10. Object.keys(),Object.values(),Object.entries()
+
+   1. Object.keys()
+
+      ```
+      返回一个数组,成员是参数对象本身(不含继承的)所有可遍历属性的键名.
+      ```
+
+   2. Object.values()
+
+      ```
+      返回一个数组,成员是参数对象本身(不含继承的)所有可遍历属性的键值.
+      ```
+
+   3. Object.entries()
+
+      ```
+      返回一个数组,成员是参数对象本身(不含继承的)所有可遍历属性的键值对数组.
+      ```
+
+      ![图片](https://github.com/qq2575896094/ES6/blob/master/images/对象的扩展/WX20171106-144246@2x.png)
 
 11. 对象的扩展运算符
 
-12. Null传导运算符
+    1. 解构赋值
+
+       ```
+       对象的解构赋值用于从一个对象取值,相当于将所有可遍历的、但尚未被独缺的属性,分配到指定的对象上面,所有的键和他们的值,都会拷贝到新的对象上.
+       ```
+
+    2. 扩展运算符
+
+       ```
+       用于取出参数对象的所有可遍历属性,拷贝到当前对象之中.
+       ```

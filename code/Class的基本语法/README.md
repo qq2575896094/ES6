@@ -79,19 +79,68 @@
 8. 私有属性
 
    ```
-   目前,ES6不支持私有属性!
+   目前,ES6不支持私有属性!目前,只是一个提案(属性名之前加#).
    ```
 
    ​
 
 9. this 的指向
 
-10. Class 的取值函数(getter) 和存值函数(setter)
+   ```
+   类的方法内部如果含有this,它默认指向类的实例.
+   ```
 
-11. Class 的Generator方法
+10. name属性
 
-12. Class 的静态方法
+   ```
+   本质上,ES6的类只是ES5de构造函数的一层包装,所以函数的许多特性都被Class类继承,包括name属性.
+   ```
 
-13. Class 的静态属性和实例属性
+   ![图片](https://github.com/qq2575896094/ES6/blob/master/images/Class的基本语法/WX20171108-092343@2x.png)
 
-14. new.target属性
+   ​
+
+11. Class 的取值函数(getter) 和存值函数(setter)
+
+    ```
+    与ES5一样,在类的内部可以使用get和set关键字,对某个属性设置存值函数和取值函数,拦截该属性的存取行为.
+    ```
+
+    ​
+
+12. Class 的Generator方法
+
+    ```
+    如果某个方法前面加上星号(*),就表示该方法是一个Generator函数.
+    ```
+
+    ​
+
+13. Class 的静态方法
+
+    ```
+    类相当于实例的原型,所有在类中定义的方法,都会被实例继续.如果在一个方法前,加上static关键字,表示该方法不会被实例继承,而且直接通过类来调用,这就成为"静态方法".
+    ```
+
+    ![图片](https://github.com/qq2575896094/ES6/blob/master/images/Class的基本语法/WX20171108-101820@2x.png)
+
+    ​
+
+14. Class 的静态属性和实例属性
+
+    ```
+    静态属性指的是Class本身的属性,即 Class.propName,而不是定义在实例对象(this)上的属性.
+    目前,ES6明确规定,Class内部只有静态方法,没有静态属性.
+    ```
+
+    ![图片](https://github.com/qq2575896094/ES6/blob/master/images/Class的基本语法/WX20171108-103007@2x.png)
+
+    ​
+
+15. new.target属性
+
+    ```
+    new是从构造函数生成实例对象的命令.ES6为new命令引入了一个new.target属性,该属性一般用在构造函数之中,返回new命令作用于的那个构造函数.如果构造函数不是通过new命令调用的,new.target会返回undefined,因此这个属性可以用来确定构造函数是怎么调用的.
+    ```
+
+    ​

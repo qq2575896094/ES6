@@ -21,3 +21,5 @@
 8. [对象的扩展](https://github.com/qq2575896094/ES6/blob/master/code/对象的扩展/README.md)
 
 9. [Class的基本语法](https://github.com/qq2575896094/ES6/blob/master/code/Class的基本语法/README.md)
+
+10. [Class的继承](https://github.com/qq2575896094/ES6/blob/master/code/Class的继承/README.md)

@@ -25,3 +25,5 @@
 10. [Class的继承](https://github.com/qq2575896094/ES6/blob/master/code/Class的继承/README.md)
 
 11. [Decorator](https://github.com/qq2575896094/ES6/blob/master/code/Decorator/README.md)
+
+11. [Module](https://github.com/qq2575896094/ES6/blob/master/code/Module/README.md)

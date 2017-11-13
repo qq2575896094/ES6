@@ -27,3 +27,5 @@
 11. [Decorator](https://github.com/qq2575896094/ES6/blob/master/code/Decorator/README.md)
 
 11. [Module](https://github.com/qq2575896094/ES6/blob/master/code/Module/README.md)
+
+11. [async](https://github.com/qq2575896094/ES6/blob/master/code/async/README.md)
